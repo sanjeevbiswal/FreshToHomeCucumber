@@ -27,7 +27,9 @@ public class HomepageTest {
 
     @Then("^Title should contains \"([^\"]*)\"$")
     public void title_should_contains(String pageTitle) throws Throwable {
+        //This is a comment
         Assert.assertTrue(driver.getTitle().contains(pageTitle));
+
     }
 
 
