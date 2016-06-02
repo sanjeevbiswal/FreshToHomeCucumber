@@ -21,4 +21,7 @@ public class Homepage {
 
     @FindBy(xpath = "//input[@id='q']")
     public WebElement searchInputBox;
+
+    @FindBy(css = ".header-sprite.icon-search")
+    public WebElement searchBox;
 }

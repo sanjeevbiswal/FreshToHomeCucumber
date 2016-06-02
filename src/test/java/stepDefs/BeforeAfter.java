@@ -26,7 +26,7 @@ public class BeforeAfter {
     @Before
     public void openBrowser() throws IOException {
         System.setProperty("webdriver.chrome.driver","./tools/chromedriver.exe");
-        driver=new ChromeDriver();
+        driver=new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }

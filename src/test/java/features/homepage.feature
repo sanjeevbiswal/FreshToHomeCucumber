@@ -11,4 +11,4 @@
        Given User is in 'Myntra' homepage
        When User search for Keyword "Jeans"
        And Click 'Search' button
-       Then User should see total number of jeans in Search page
+       Then User should see only "jeans" in Search page
