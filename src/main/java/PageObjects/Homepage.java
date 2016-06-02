@@ -18,4 +18,7 @@ public class Homepage {
 
     @FindBy(xpath = "//a[text()='Bangalore']")
     public WebElement cityBangalore;
+
+    @FindBy(xpath = "//input[@id='q']")
+    public WebElement searchInputBox;
 }
