@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D://FreshToHomeCucumber/FreshToHomeCucumber.iml" filepath="D://FreshToHomeCucumber/FreshToHomeCucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreshToHomeCucumber.iml" filepath="$PROJECT_DIR$/FreshToHomeCucumber.iml" />
     </modules>
   </component>
 </project>

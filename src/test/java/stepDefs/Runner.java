@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "stepDefs",
-        strict = true,
-        format = { "pretty", "html:target/site/cucumber-pretty"},
-        monochrome = true
+                format = { "pretty", "html:target/site/cucumber-pretty"},
+        monochrome = true,
+        tags = "@Search_001"
 
 )
 public class Runner {

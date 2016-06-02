@@ -19,16 +19,15 @@ public class HomepageTest {
         driver= BeforeAfter.driver;
         homepage=PageFactory.initElements(driver, Homepage.class);
     }
-    @Given("^User is in homepage$")
+    @Given("^User is in 'Myntra' homepage$")
     public void user_is_in_homepage() throws Throwable {
-        driver.get("https://www.freshtohome.com/");
-        homepage.cityBangalore.click();
+        driver.get("http://www.myntra.com/");
+
     }
 
     @Then("^Title should contains \"([^\"]*)\"$")
     public void title_should_contains(String pageTitle) throws Throwable {
-        //This is a comment
-        Assert.assertTrue(driver.getTitle().contains(pageTitle));
+              Assert.assertTrue(driver.getTitle().contains(pageTitle));
 
     }
 
