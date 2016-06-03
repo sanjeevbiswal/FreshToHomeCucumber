@@ -53,5 +53,8 @@ public class HomepageTest {
     }
 
 
-
+    @Then("^User should see only \"([^\"]*)\" in Search page$")
+    public void userShouldSeeOnlyInSearchPage(String searchQuery) throws Throwable {
+        Assert.assertTrue(searchResultPage.searchItem.getText().contains(searchQuery));
+    }
 }

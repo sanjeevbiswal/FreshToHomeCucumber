@@ -34,6 +34,9 @@ public class BeforeAfter {
     @After
     public void tearDown(Scenario scenario) throws IOException {
             scenario.write(scenario.getName()+"   "+scenario.getStatus());
+        if(scenario.isFailed()){
+            takeScreenshot(scenario.getName());
+        }
 
         if(driver!=null){
             //driver.close();

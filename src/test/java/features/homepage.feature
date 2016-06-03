@@ -7,8 +7,14 @@
 
 
     @Search_001
-     Scenario: Verify Search
+     Scenario Outline: Verify Search
        Given User is in 'Myntra' homepage
-       When User search for Keyword "Jeans"
+       When User search for Keyword "<Item>"
        And Click 'Search' button
-       Then User should see only "jeans" in Search page
+       Then User should see only "<Item>" in Search page
+
+      Examples:
+      |Item|
+      |Jeans|
+      |Kurtis|
+      |Salwars|
